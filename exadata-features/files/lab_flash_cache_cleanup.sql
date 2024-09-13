@@ -9,4 +9,6 @@ where 1=0;
 INSERT /*+ APPEND PARALLEL(4) */ INTO customers_fc
 SELECT * FROM customers_org;
 
+truncate table fc_lab;
+
 commit;
